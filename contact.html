@@ -1,0 +1,109 @@
+<!--
+    Name: Joan Montas
+    Email: Joan_Montas@student.uml.edu
+    File: contact.html
+    GUI Assignment: GUI1, HW1 "PART 2: First Web Page"
+    Description: contains contatc information and a few testimonial
+    Copyright (c) 2023 by Joan Montas. All rights reserved.
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Contat the Alf</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!-- The page and its subpages all contain a navbar of the same style. -->
+        <nav id="stockNavBar">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+        </nav>
+
+        <!--
+            The main "body" is composed of a div .
+            It will be divided into 3 separate logical columns.
+            The outer most for style and placing a fixed button.
+            Middle most contains the actual informative text (box2).
+            Is shared amongst all the subpages
+        -->
+        <div id="mainText">
+            <div class="box1">
+                <a href="https://www.youtube.com/watch?v=C18WA0NpQ0M"><img id="alfClickme" src="images/faceshotOnlyClickMe.png" alt="#"></a>
+            </div>
+            <div class="box2">
+                <div id="myAddress">
+                    <h2>Where to Contact The Alf.</h2>
+                    <address>
+                        The Alfred
+                        <br>
+                        The_real_Alfred@Alfiemail.com
+                        <br>
+                        123 main street,
+                        <br> 
+                        Alftown Massachusetts,
+                        <br>
+                        01234,
+                        <br>
+                        USA
+                    </address>
+                    <h3>You Will Not Regret it!</h3>
+                </div>
+                <div>
+                    <h4>Here are some testimonials</h4>
+                      <!-- 
+                        Tables are composed of table head and table body
+                        The head contains the category of data.
+                        The body contains the data itself.
+                        Both head and body are composed of:
+                             "tr": table row
+                             and
+                             "th": table head
+                        We will be styling tables the same, so no ID or class
+                    -->
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Quote</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Alesya Kalpana</th>
+                                <th>Extremely rude towards the crue but gets the job done.</th>
+                            </tr>
+                            <tr>
+                                <th>Jens Susano</th>
+                                <th>Would not stop eating during the photoshoot.</th>
+                            </tr>
+                            <tr>
+                                <th>Glika Wilfrid</th>
+                                <th>Behaves quite well if rewarded with pizza.</th>
+                            </tr>
+                            <tr>
+                                <th>Gefen Ramos</th>
+                                <th>Needs some serious life check.</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="box3">
+
+            </div>
+        </div>
+        <!-- 
+            The page and its subpages all contain a footer with the same style.
+            This footer in specific, contains a paragraph; as to encourage
+            clicking Alfred's face to go back up.
+        -->
+        <footer id="stockFooter">
+            <p>Copyright &copy; 2023 Alfred</p>
+            <p>  <a href="#">Home</a> </p>
+            <p>  <a href="#">About</a> </p>
+            <p>  <a href="#">Contact</a> </p>
+        </footer>
+    </body>
+</html>

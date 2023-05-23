@@ -1,0 +1,160 @@
+<!--
+    Name: Joan Montas
+    File: index.html
+    GUI Assignment: GUI1, HW1 "PART 2: First Web Page"
+    Description: Main page. Contains welcome message.
+                The navbar welcomes the user to explore the website.
+    Copyright (c) 2023 by Joan Montas. All rights reserved.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Alfie</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!-- The page and its subpages all contain a navbar of the same style. -->
+        <nav id="stockNavBar">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+        </nav>
+
+        <!-- Welcomes user with a picture of the alf. -->
+        <section id="welcomingImage">
+            <div class="welcomeDiv">
+                <h2>I am The Alfred.</h2>
+            </div>
+        </section>
+
+        <!--
+            The main "body" is composed of a div .
+            It will be divided into 3 separate logical columns.
+            The outer most for style and placing a fixed button.
+            Middle most contains the actual informative text (box2).
+            Is shared amongst all the subpages
+        -->
+        <div id="mainText">
+            <div class="box1">
+                <a href="#"><img id="alfBackUp" src="images/faceshotOnlyClickToGoBackUp.png" alt="#"></a>
+            </div>
+
+            <!--
+                Here is the box2, where data will be placed.
+                The box2 div is further broken down into
+                seprate section: Intro and Stats.
+                Notice that the sub section are div too.
+                This will allow us to do easier CSS styling.
+            -->
+            <div class="box2">
+
+                <div id="shortAndSweet">
+                    <h2> Let Me Introduce Myself</h2>
+                    <p>
+                        My name is Alfred, Alfred The Butler that is. I am one of the sassiest Chihuahua around.
+                        To be honest probably the sassiest Chihuahua that has ever existed. I enjoy napping and belly rubs.
+                        On my free time I like to hide food; I like being prepared for everything.
+                        I am a mama's boy, I follow her everywhere! Please enjoy my site. Send me a message for photo shoot inquiries.
+                    </p>
+                </div> <!-- shortAndSweet -->
+
+                <!-- 
+                    Here, in stats, we will create our required table.
+                 -->
+                <div id="wantToSeeTables">
+                    <h2>Some Quick Stats About me</h2>
+                    <p>
+                        Here are some quick statistic about my self.
+                        <br>
+                        Be sure to check my <a href="about.html">About</a> page after.
+                    </p>
+                    <!-- 
+                        Tables are composed of table head and table body
+                        The head contains the category of data.
+                        The body contains the data itself.
+                        Both head and body are composed of:
+                             "tr": table row
+                             and
+                             "th": table head
+                        We will be styling tables the same, so no ID or class
+                    -->
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Facts</th>
+                                <th>Statistics</th>
+                                <th>Detail</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Breed</th>
+                                <th>Chihuahua</th>
+                                <th>Pure bred</th>
+                            </tr>
+                            <tr>
+                                <th>Birthplace</th>
+                                <th>New York</th>
+                                <th>New York New York!</th>
+                            </tr>
+                            <tr>
+                                <th>Birthday</th>
+                                <th>12/1/2018</th>
+                                <th>I am 5!</th>
+
+                            </tr>
+                            <tr>
+                                <th>Weight</th>
+                                <th>7 Pound</th>
+                                <th>Little Guy</th>
+                            </tr>
+                            <tr>
+                                <th>Height</th>
+                                <th>6 inches</th>
+                                <th>"Smol Boy"</th>
+                            </tr>
+                            <tr>
+                                <th>Coat</th>
+                                <th>White</th>
+                                <th>Black nose too</th>
+                            </tr>
+                            <tr>
+                                <th>Favorite-Food</th>
+                                <th>Cheese!</th>
+                                <th>And pizza!</th>
+                            </tr>
+                            <tr>
+                                <th>Profession</th>
+                                <th>Model</th>
+                                <th>Retired, check my <a href="about.html">About!</a> I have won awards! </th>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+                </div> <!-- wantToSeeTables -->
+
+            </div>
+
+            <div class="box3">
+                <a href="https://www.youtube.com/watch?v=C18WA0NpQ0M"><img id="alfClickme" src="images/faceshotOnlyClickMe.png" alt="#"></a>
+            </div>
+
+        </div> <!--mainText-->
+
+        <!-- 
+            The page and its subpages all contain a footer with the same style.
+            This footer in specific, contains a paragraph; as to encourage
+            clicking Alfred's face to go back up.
+        -->
+        <footer id="stockFooter">
+            <p>Copyright &copy; 2023 Alfred</p>
+            <p>  <a href="index.html">Home</a> </p>
+            <p>  <a href="about.html">About</a> </p>
+            <p>  <a href="contact.html">Contact</a> </p>
+            <p>Hi! There! Make sure to click my face to go back up! ;)</p>
+        </footer>
+
+    </body>
+</html>

@@ -1,0 +1,184 @@
+/*
+    Name:Joan Montas
+    Email: Joan_Montas@student.uml.edu
+    File: index.html
+    Description: Provides CSS styling for all subpages: index.html, contact.html, about.html
+                HTML elements are targeted via id or class. ID is used to target individualized
+                elements while class provides an uniform styling amongst a similar group.
+    GUI Assignment: GUI1, HW1 "PART 2: First Web Page"
+    Copyright (c) 2023 by Joan Montas. All rights reserved.
+*/
+body {
+    /* remove the margin so that ALL elements in body are able to touch the edge */
+    margin: 0;
+    background-color: black;
+}
+
+a {
+    /* Assumes to all type a elements; removes default text decoration such as line under. */
+    text-decoration-line: none;
+}
+
+#stockNavBar {
+    /*set color and size of nav bar*/
+    background-color: rgba(104, 122, 78);
+}
+
+#stockNavBar a {
+    /*removes the line under 'a' and customize the color and line under it*/
+    text-decoration-line: none;
+    background-color: rgb(78, 97, 53);
+    color: black;
+    font-size: 25px;
+
+}
+
+#stockNavBar a:hover {
+    /*when navbar's a are hovered, make the text wheat colored*/
+    color: wheat
+}
+
+#welcomingImage {
+    /*Sets the welome image into the desire position and its background color*/
+    background-image: url(../images/natureC.png);
+    background-position: center;
+    min-height: 300px;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-style: italic;
+    color: wheat;
+}
+
+#mainText{
+    display:grid;
+    grid-template-columns: 1fr 7fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    justify-items: stretch;
+    color: wheat;
+}
+
+.box1 {
+    grid-column: 1;
+    background-color: rgb(74, 102, 38);
+}
+
+#alfBackUp{
+    /*resize and fixed click-me button*/
+    /*https://www.geeksforgeeks.org/resize-image-proportionally-with-css/*/
+    position: fixed;
+    width: 180px;
+}
+
+#shortAndSweet {
+    border: 1px solid gray;
+    margin: 10px;
+    text-align: center;
+}
+
+#shortAndSweet h2 {
+    text-align: center;
+}
+
+#wantToSeeTables {
+    /*
+        In order to make the table aesthetically pleasing to the eye
+        an alternate pattern of color was chosen.
+        This also makes is easier to present information    
+    */
+    text-align: center;
+    border: 1px solid gray;
+    margin: 10px;
+}
+
+table {
+    /*
+        The table has a default color.
+        It is further modified with the styling below to facilitate reading.
+    */
+    background-color: rgb(107, 130, 73);
+    text-align: left;
+    width: 100%;
+}
+
+thead {
+    background-color: gray
+}
+
+tr:nth-child(even) {
+    /* useful alternate pattern, easy on the eyes*/
+    background-color: rgb(74, 102, 38);
+}
+
+.box3 {
+    grid-column: 3;
+    background-color: rgb(74, 102, 38);
+}
+
+#alfClickme{
+    /*resize and fixed click-me button just like above*/
+    /*The resouces was found here*/
+    /*https://www.geeksforgeeks.org/resize-image-proportionally-with-css/*/
+    position: fixed;
+    width: 180px;
+}
+
+#photoShootIntro{
+    /*
+        The PhotoShoot is standarized in terms of color and size
+        This is particularly useful since the images are of different
+        size.
+    */
+    text-align: center;
+    border: 1px solid gray;
+}
+
+.PhotoShoot {
+    margin: 10px;
+    float: left;
+    border: 1px solid gray;
+    background-color: rgb(107, 130, 73);
+}
+
+.PhotoShoot img{
+    width: 200px;
+    height: 300px;
+    margin: 20px;
+}
+
+.PhotoShoot p{
+    margin-left: 20px;
+    text-align: center;
+    background-color: rgb(74, 102, 38);
+    width: 200px;
+}
+
+#myAddress {
+    /*Aestetically pleasing address display*/
+    padding: 10px;
+    border: solid 1px gray;
+    text-align: center;
+}
+
+#stockFooter {
+    /*Set the background color of footer amongst other sizing for aesthetic*/
+    background-color: rgb(107, 130, 73);
+    padding: 50px;
+    font-size: 20px;
+}
+
+#stockFooter p {
+    /*centers the paragraph and changes the font color to wheat inside the footer*/
+    text-align: center;
+    color: wheat;
+}
+
+#stockFooter a {
+    /*removes the line under 'a'*/
+    color: black;
+}
+
+#stockFooter a:hover {
+    /*when navbar's a are hover, make the text wheat color*/
+    color: wheat
+}
+

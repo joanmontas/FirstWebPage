@@ -1,0 +1,86 @@
+<!--
+    Name: Joan Montas
+    Email: Joan_Montas@student.uml.edu
+    File: about.html
+    GUI Assignment: GUI1, HW1 "PART 2: First Web Page"
+    Description:
+    Copyright (c) 2023 by Joan Montas. All rights reserved.
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>About the Alf</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <!-- The page and its subpages all contain a navbar of the same style. -->
+        <nav id="stockNavBar">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+        </nav>
+        <!--
+            The main "body" is composed of a div .
+            It will be divided into 3 separate logical columns.
+            The outer most for style and placing a fixed button.
+            Middle most contains the actual informative text (box2).
+            Is shared amongst all the subpages
+        -->
+        <div id="mainText">
+            <div class="box1">
+                <a href="https://www.youtube.com/watch?v=C18WA0NpQ0M"><img id="alfClickme" src="images/faceshotOnlyClickMe.png" alt="#"></a>
+            </div>
+            <div class="box2">
+                <!--
+                    Each photography is composed of a div. The div share the same class as they
+                    will be styled similarly.
+                    The image is presented using the "img" tag and comments are surrounded by
+                    paragraphs.
+                -->
+                <div id="photoShootIntro">
+                    <h2>About the Alf.</h2>
+                    <p>
+                        Enjoy my photos, I know you will.
+                    </p>
+                    
+                    <div class="PhotoShoot">
+                        <img src="images/modlingHoodieAndBowtie.jpeg" alt="#">
+                        <p class="PhotoShootComment">I still got it! Rocking a Hoodie and a bowtie.</p>
+                    </div>
+
+                    <div class="PhotoShoot">
+                        <img src="images/baby.jpeg" alt="#">
+                        <p class="PhotoShootComment">My younger self. I am always cold and need a blanket.</p>
+                    </div>
+
+                    <div class="PhotoShoot">
+                        <img src="images/modlingAward.jpeg" alt="#">
+                        <p class="PhotoShootComment">Me winning a contest. Pizza is my true reward.</p>
+                    </div>
+
+                    <div class="PhotoShoot">
+                        <img src="images/pierogied.jpeg" alt="#">
+                        <p class="PhotoShootComment">Pierogies for me! This one is proportional to my body size.</p>
+                    </div>
+                </div> <!--photoShootIntro-->
+            </div> <!--box2-->
+
+            <div class="box3">
+            </div>
+        </div>
+
+         <!-- 
+            The page and its subpages all contain a footer with the same style.
+            This footer in specific, contains a paragraph; as to encourage
+            clicking Alfred's face to go back up.
+        -->
+        <footer id="stockFooter">
+            <p>Copyright &copy; 2023 Alfred</p>
+            <p>  <a href="index.html">Home</a> </p>
+            <p>  <a href="about.html">About</a> </p>
+            <p>  <a href="contact.html">Contact</a> </p>
+        </footer>
+    </body>
+</html>
